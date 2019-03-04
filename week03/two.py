@@ -1,7 +1,6 @@
 '''
-Python is easy.Python is easy.Python is easy.
 2.读入文件‘monday.txt’.统计文件中每个单词的数量并且进行输出。
-txt的文本文件为
+txt的文本文件为 Python is easy.Python is easy.Python is easy.
 然后再将下面一段文字加入到Monday.txt中然后进行输出
 ‘张三 18 99分
  李四   23  97分
