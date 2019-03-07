@@ -1,4 +1,5 @@
-'''（1）通过代码随机生成1000个样本的arg序列（arg是由ABCD四个字母随机组成的），生成文件名为num.txt，文件的具体格式如下[20分]：
+'''
+（1）通过代码随机生成1000个样本的arg序列（arg是由ABCD四个字母随机组成的），生成文件名为num.txt，文件的具体格式如下[20分]：
 S00001	  ABCD….CABD
 S00002    CABD….BACD
 S00003    BDCA….AABD
@@ -22,7 +23,8 @@ for i in range(1,501):
 arg.flush()
 arg.close()
 
-'''（2）编写函数从num.txt生成的500条数据中随机取出一条例如S00003	  ABACADAAABABTBTAACAC）；
+'''
+（2）编写函数从num.txt生成的500条数据中随机取出一条例如S00003	  ABACADAAABABTBTAACAC）；
 和生成的1000条数据进行一一比对，但是最后附加相似度数据项；  
 输出一个文件，文件名为searchResult.txt ；
 样本数据的顺序需要按着和输入样本的相似度降序排序：（输入样本应该出现在第一行）[26分]
@@ -59,7 +61,7 @@ def similarity():
                然后通过下标获取该列表的对应元素，
                例如：i= "S00001   	CCDBCBACACADACCBADBA"  i[-20:][0] = 'C'
             '''
-            if i[-20:][j] == s2[-20:][j]:
+            if i[-20:]  [j] == s2[-20:]  [j]:
                 count1 += 1
         dict1[i] = count1
 
